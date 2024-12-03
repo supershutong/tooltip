@@ -47,6 +47,8 @@ export interface TooltipProps
   zIndex?: number;
   styles?: TooltipStyles;
   classNames?: TooltipClassNames;
+  maskClosable?: boolean;
+  onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
 }
 
 export interface TooltipStyles {
