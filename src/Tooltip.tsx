@@ -38,6 +38,8 @@ export interface TooltipProps extends Pick<TriggerProps, 'onPopupAlign' | 'built
   popupVisible?: boolean;
   overlayInnerStyle?: React.CSSProperties;
   zIndex?: number;
+  maskClosable?: boolean;
+  onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
 }
 
 const Tooltip = (props: TooltipProps, ref) => {
